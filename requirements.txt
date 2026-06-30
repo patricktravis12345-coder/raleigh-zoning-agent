@@ -1,0 +1,7 @@
+# This project intentionally uses only the Python standard library
+# (urllib, json, subprocess, etc.) for the core pipeline, so there is
+# nothing strictly required to install.
+#
+# Kept as an empty-ish requirements.txt so the project structure matches
+# what you'd expect, and as a place to add packages later if we extend the
+# agent (e.g. requests, geopandas, shapely for more advanced geometry work).

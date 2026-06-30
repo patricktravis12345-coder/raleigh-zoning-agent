@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raleigh Zoning Changes</title>
+<style>
+  :root {
+    --ink: #1f2421;
+    --paper: #f7f5ef;
+    --line: #d8d3c4;
+    --rail: #2c3a2e;
+    --accent: #b5542a;
+    --accent-soft: #e9d9c9;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+    --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+  }
+
+  @media (max-width: 760px) {
+    #app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: auto; }
+    #sidebar { max-height: 40vh; overflow-y: auto; }
+    #map { height: 60vh; }
+  }
+
+  #sidebar {
+    background: var(--rail);
+    color: var(--paper);
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    overflow-y: auto;
+  }
+
+  #sidebar h1 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  #sidebar .subtitle {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-soft);
+    margin-top: -10px;
+  }
+
+  #meta {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: #c9d1c8;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding: 12px 0;
+  }
+
+  #meta div { margin-bottom: 4px; }
+
+  #filters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #filters label {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  #case-list {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .case-card {
+    background: rgba(255,255,255,0.06);
+    border-left: 3px solid var(--accent);
+    padding: 10px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .case-card:hover { background: rgba(255,255,255,0.12); }
+
+  .case-card .case-number {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--accent-soft);
+  }
+
+  .case-card .zoning-change {
+    font-size: 0.85rem;
+    margin-top: 2px;
+  }
+
+  .case-card .status {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9fb09f;
+    margin-top: 4px;
+  }
+
+  #map { width: 100%; height: 100%; }
+
+  #empty-state {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: #9fb09f;
+    line-height: 1.5;
+  }
+
+  .gm-info {
+    font-family: var(--sans);
+    color: var(--ink);
+    min-width: 200px;
+  }
+
+  .gm-info .case-number {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+  }
+
+  .gm-info h3 {
+    margin: 4px 0;
+    font-size: 0.95rem;
+  }
+
+  .gm-info .detail-row {
+    font-size: 0.82rem;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+
+<div id="app">
+  <aside id="sidebar">
+    <div>
+      <div class="subtitle">City of Raleigh &middot; Wake County, NC</div>
+      <h1>Zoning Change Tracker</h1>
+    </div>
+
+    <div id="meta">
+      <div id="last-updated">Last updated: —</div>
+      <div id="case-count">Cases tracked: —</div>
+    </div>
+
+    <div id="filters"></div>
+
+    <div id="case-list"></div>
+  </aside>
+
+  <div id="map"></div>
+</div>
+
+<script src="data.js"></script>
+<script>
+  let map;
+  let markers = [];
+  let activeInfoWindow = null;
+  let activeStatuses = new Set();
+
+  function formatDate(iso) {
+    if (!iso) return "—";
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+  }
+
+  function zoningChangeLabel(c) {
+    const from = c.existing_zoning || "?";
+    const to = c.requested_zoning || "?";
+    return `${from} \u2192 ${to}`;
+  }
+
+  function buildInfoWindowContent(c) {
+    return `
+      <div class="gm-info">
+        <div class="case-number">${c.case_number}</div>
+        <h3>${zoningChangeLabel(c)}</h3>
+        <div class="detail-row"><strong>Status:</strong> ${c.status || "Unknown"}</div>
+        <div class="detail-row"><strong>Type:</strong> ${c.case_type || "—"}</div>
+        <div class="detail-row"><strong>Address:</strong> ${c.address || "—"}</div>
+        <div class="detail-row"><strong>Received:</strong> ${formatDate(c.date_received)}</div>
+      </div>
+    `;
+  }
+
+  function renderFilters(cases) {
+    const statuses = [...new Set(cases.map(c => c.status).filter(Boolean))].sort();
+    activeStatuses = new Set(statuses);
+
+    const container = document.getElementById("filters");
+    container.innerHTML = "";
+    statuses.forEach(status => {
+      const id = "filter-" + status.replace(/\s+/g, "-");
+      const label = document.createElement("label");
+      label.innerHTML = `<input type="checkbox" id="${id}" checked> ${status}`;
+      label.querySelector("input").addEventListener("change", (e) => {
+        if (e.target.checked) {
+          activeStatuses.add(status);
+        } else {
+          activeStatuses.delete(status);
+        }
+        renderAll(cases);
+      });
+      container.appendChild(label);
+    });
+  }
+
+  function clearMarkers() {
+    markers.forEach(m => m.setMap(null));
+    markers = [];
+  }
+
+  function renderMap(cases) {
+    clearMarkers();
+    const visible = cases.filter(c => activeStatuses.has(c.status));
+
+    visible.forEach(c => {
+      const marker = new google.maps.Marker({
+        position: { lat: c.lat, lng: c.lng },
+        map,
+        title: `${c.case_number}: ${zoningChangeLabel(c)}`,
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: buildInfoWindowContent(c),
+      });
+
+      marker.addListener("click", () => {
+        if (activeInfoWindow) activeInfoWindow.close();
+        infoWindow.open(map, marker);
+        activeInfoWindow = infoWindow;
+      });
+
+      marker._caseNumber = c.case_number;
+      markers.push(marker);
+    });
+  }
+
+  function renderList(cases) {
+    const visible = cases.filter(c => activeStatuses.has(c.status));
+    const listEl = document.getElementById("case-list");
+    listEl.innerHTML = "";
+
+    if (visible.length === 0) {
+      listEl.innerHTML = `<div id="empty-state">No cases match the current filters.</div>`;
+      return;
+    }
+
+    visible
+      .slice()
+      .sort((a, b) => (b.date_received || "").localeCompare(a.date_received || ""))
+      .forEach(c => {
+        const card = document.createElement("div");
+        card.className = "case-card";
+        card.innerHTML = `
+          <div class="case-number">${c.case_number}</div>
+          <div class="zoning-change">${zoningChangeLabel(c)}</div>
+          <div class="status">${c.status || "Unknown"} &middot; ${formatDate(c.date_received)}</div>
+        `;
+        card.addEventListener("click", () => {
+          map.panTo({ lat: c.lat, lng: c.lng });
+          map.setZoom(16);
+          const marker = markers.find(m => m._caseNumber === c.case_number);
+          if (marker) google.maps.event.trigger(marker, "click");
+        });
+        listEl.appendChild(card);
+      });
+  }
+
+  function renderAll(cases) {
+    renderMap(cases);
+    renderList(cases);
+  }
+
+  function renderMeta(data) {
+    const updated = new Date(data.generated_at);
+    document.getElementById("last-updated").textContent =
+      "Last updated: " + (isNaN(updated) ? data.generated_at : updated.toLocaleString("en-US"));
+    document.getElementById("case-count").textContent =
+      "Cases tracked: " + data.count;
+  }
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat: 35.7796, lng: -78.6382 },
+      zoom: 11,
+      mapTypeControl: true,
+      streetViewControl: false,
+    });
+
+    const cases = (typeof ZONING_DATA !== "undefined" && ZONING_DATA.cases) || [];
+
+    if (cases.length === 0) {
+      document.getElementById("case-list").innerHTML =
+        `<div id="empty-state">No zoning case data yet. The agent generates docs/data.js on its first successful run.</div>`;
+      return;
+    }
+
+    renderMeta(ZONING_DATA);
+    renderFilters(cases);
+    renderAll(cases);
+  }
+
+  window.initMap = initMap;
+</script>
+
+<script>
+  // Loaded last so initMap (defined above) is ready when the API calls it.
+  (function loadGoogleMaps() {
+    const script = document.createElement("script");
+    // Replace YOUR_API_KEY_HERE at build/deploy time, or edit directly --
+    // see SETUP.md for how this key is restricted to your GitHub Pages domain.
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCk21IChYT_BOYDL7Ec8xidDqBTrDK86hw&callback=initMap";
+    script.async = true;
+    document.head.appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
