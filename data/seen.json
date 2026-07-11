@@ -8425,16 +8425,16 @@
   },
   "Z-50-2024": {
     "case_number": "Z-50-2024",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-10",
     "requested_zoning": "CX-5-CU",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "2245, 2302, 2307, 2311 Garner Rd",
     "lat": 35.74864247882899,
     "lng": -78.62948085003242,
     "first_seen": "2026-06-30T18:58:56.329412+00:00",
-    "last_updated": "2026-06-30T18:58:56.329413+00:00"
+    "last_updated": "2026-07-11T13:00:04.620024+00:00"
   },
   "TCZ-3-2025": {
     "case_number": "TCZ-3-2025",
@@ -8971,16 +8971,16 @@
   },
   "Z-44-2025": {
     "case_number": "Z-44-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-30 (Wake Co)",
     "requested_zoning": "R-10-CU",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "Jones Ridge Trl Assemblage",
     "lat": 35.902041653762616,
     "lng": -78.49902785144994,
     "first_seen": "2026-06-30T18:58:56.329513+00:00",
-    "last_updated": "2026-06-30T18:58:56.329514+00:00"
+    "last_updated": "2026-07-11T13:00:04.620049+00:00"
   },
   "Z-42-2025": {
     "case_number": "Z-42-2025",
@@ -9010,16 +9010,16 @@
   },
   "Z-46-2025": {
     "case_number": "Z-46-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "DX-5-UL",
     "requested_zoning": "DX-7-UL",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "523 S West St",
     "lat": 35.773472867848355,
     "lng": -78.64588334306565,
     "first_seen": "2026-06-30T18:58:56.329519+00:00",
-    "last_updated": "2026-06-30T18:58:56.329520+00:00"
+    "last_updated": "2026-07-11T13:00:04.620050+00:00"
   },
   "Z-47-2025": {
     "case_number": "Z-47-2025",
@@ -9140,16 +9140,16 @@
   },
   "Z-57-2025": {
     "case_number": "Z-57-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-1, R-4 & R-10-CU",
     "requested_zoning": "R-6-CU",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "8020 Litchford Rd (Partial)",
     "lat": 35.88823792654368,
     "lng": -78.60164926809841,
     "first_seen": "2026-06-30T18:58:56.329539+00:00",
-    "last_updated": "2026-06-30T18:58:56.329540+00:00"
+    "last_updated": "2026-07-11T13:00:04.620054+00:00"
   },
   "Z-1-2026": {
     "case_number": "Z-1-2026",
@@ -9166,16 +9166,16 @@
   },
   "TCZ-2-2026": {
     "case_number": "TCZ-2-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "TCZ",
     "existing_zoning": "CX-3-PL-CU",
     "requested_zoning": "CX-3-PL-CU (Amend Zoning Conditions)",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "4601 Creedmoor Rd",
     "lat": 35.844231214163784,
     "lng": -78.68090319106452,
     "first_seen": "2026-06-30T18:58:56.329543+00:00",
-    "last_updated": "2026-06-30T18:58:56.329544+00:00"
+    "last_updated": "2026-07-11T13:00:04.620057+00:00"
   },
   "Z-3-2026": {
     "case_number": "Z-3-2026",
@@ -9257,16 +9257,16 @@
   },
   "Z-11-2026": {
     "case_number": "Z-11-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-2",
     "requested_zoning": "R-4",
-    "date_received": null,
+    "date_received": "2026-07-07T12:00:00+00:00",
     "address": "3901 Stratford Ct",
     "lat": 35.832705546455514,
     "lng": -78.64788204294844,
     "first_seen": "2026-06-30T18:58:56.329557+00:00",
-    "last_updated": "2026-06-30T18:58:56.329557+00:00"
+    "last_updated": "2026-07-11T13:00:04.620060+00:00"
   },
   "Z-12-2026": {
     "case_number": "Z-12-2026",
