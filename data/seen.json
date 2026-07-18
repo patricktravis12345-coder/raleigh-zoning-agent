@@ -9436,5 +9436,31 @@
     "lng": -78.682805371124,
     "first_seen": "2026-06-30T18:58:56.329584+00:00",
     "last_updated": "2026-06-30T18:58:56.329585+00:00"
+  },
+  "Z-24-2026": {
+    "case_number": "Z-24-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4 & R-10",
+    "requested_zoning": "R-10-CU",
+    "date_received": null,
+    "address": "1613 Battery Dr",
+    "lat": 35.775533386763726,
+    "lng": -78.61426299702781,
+    "first_seen": "2026-07-18T13:00:04.651200+00:00",
+    "last_updated": "2026-07-18T13:00:04.651201+00:00"
+  },
+  "Z-25-2026": {
+    "case_number": "Z-25-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-10 w/ SRPOD",
+    "requested_zoning": "NX-3-UG-CU w/ SRPOD",
+    "date_received": null,
+    "address": "0 Wakefield Ave (PIN: 1703196635); 113 Ashe Ave & 111 Ashe Ave",
+    "lat": 35.78191974086877,
+    "lng": -78.65732165144136,
+    "first_seen": "2026-07-18T13:00:04.651203+00:00",
+    "last_updated": "2026-07-18T13:00:04.651204+00:00"
   }
 }
