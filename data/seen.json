@@ -9462,5 +9462,44 @@
     "lng": -78.65732165144136,
     "first_seen": "2026-07-18T13:00:04.651203+00:00",
     "last_updated": "2026-07-18T13:00:04.651204+00:00"
+  },
+  "Z-282-2026": {
+    "case_number": "Z-282-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4",
+    "requested_zoning": "R-10-CU",
+    "date_received": null,
+    "address": "1900 Wimbish Ln",
+    "lat": 35.864382194201276,
+    "lng": -78.67000626372823,
+    "first_seen": "2026-08-03T13:00:04.632009+00:00",
+    "last_updated": "2026-08-03T13:00:04.632010+00:00"
+  },
+  "Z-29-2026": {
+    "case_number": "Z-29-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "PD",
+    "requested_zoning": "CX-3-CU",
+    "date_received": null,
+    "address": "2901 Forestville Rd",
+    "lat": 35.89691414650084,
+    "lng": -78.50267519152362,
+    "first_seen": "2026-08-03T13:00:04.632012+00:00",
+    "last_updated": "2026-08-03T13:00:04.632041+00:00"
+  },
+  "Z-30-2026": {
+    "case_number": "Z-30-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "RX-3 w/ NCOD & SRPOD",
+    "requested_zoning": "RX-3-CU (Remove NCOD & SRPOD)",
+    "date_received": null,
+    "address": "2408 Clark Ave",
+    "lat": 35.78972760264605,
+    "lng": -78.66613822537377,
+    "first_seen": "2026-08-03T13:00:04.632042+00:00",
+    "last_updated": "2026-08-03T13:00:04.632043+00:00"
   }
 }
