@@ -9501,5 +9501,18 @@
     "lng": -78.66613822537377,
     "first_seen": "2026-08-03T13:00:04.632042+00:00",
     "last_updated": "2026-08-03T13:00:04.632043+00:00"
+  },
+  "Z-28-2026": {
+    "case_number": "Z-28-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4",
+    "requested_zoning": "R-10-CU",
+    "date_received": null,
+    "address": "1900 Wimbish Ln",
+    "lat": 35.864382194201276,
+    "lng": -78.67000626372823,
+    "first_seen": "2026-08-14T13:00:04.263813+00:00",
+    "last_updated": "2026-08-14T13:00:04.263814+00:00"
   }
 }
