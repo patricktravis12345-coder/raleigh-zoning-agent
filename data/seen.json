@@ -9514,5 +9514,18 @@
     "lng": -78.67000626372823,
     "first_seen": "2026-08-14T13:00:04.263813+00:00",
     "last_updated": "2026-08-14T13:00:04.263814+00:00"
+  },
+  "Z-32-2026": {
+    "case_number": "Z-32-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-1 w/ SWPOD",
+    "requested_zoning": "R-6-CU w/ SWPOD",
+    "date_received": null,
+    "address": "2512 Prince Dr",
+    "lat": 35.74791268676082,
+    "lng": -78.73537973254118,
+    "first_seen": "2026-09-03T13:00:06.052876+00:00",
+    "last_updated": "2026-09-03T13:00:06.052877+00:00"
   }
 }
