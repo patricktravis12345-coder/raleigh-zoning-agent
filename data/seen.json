@@ -9527,5 +9527,57 @@
     "lng": -78.73537973254118,
     "first_seen": "2026-09-03T13:00:06.052876+00:00",
     "last_updated": "2026-09-03T13:00:06.052877+00:00"
+  },
+  "Z-26-2026": {
+    "case_number": "Z-26-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-1",
+    "requested_zoning": "CX-3",
+    "date_received": null,
+    "address": "5621 & 5615 Kyle Dr",
+    "lat": 35.85376587520068,
+    "lng": -78.55561054540254,
+    "first_seen": "2026-09-04T13:00:06.530949+00:00",
+    "last_updated": "2026-09-04T13:00:06.530950+00:00"
+  },
+  "Z-10-2026": {
+    "case_number": "Z-10-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4",
+    "requested_zoning": "NX-3-CU",
+    "date_received": null,
+    "address": "7008 Perry Creek Rd",
+    "lat": 35.87679783192675,
+    "lng": -78.540923533944,
+    "first_seen": "2026-09-04T13:00:06.530952+00:00",
+    "last_updated": "2026-09-04T13:00:06.530953+00:00"
+  },
+  "Z-35-2026": {
+    "case_number": "Z-35-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4",
+    "requested_zoning": "RX-5-CU",
+    "date_received": null,
+    "address": "5000 Duraleigh Rd",
+    "lat": 35.84402109349659,
+    "lng": -78.70986616494818,
+    "first_seen": "2026-09-04T13:00:06.530954+00:00",
+    "last_updated": "2026-09-04T13:00:06.530955+00:00"
+  },
+  "Z-36-2026": {
+    "case_number": "Z-36-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "OX-4-UL w/ SRPOD",
+    "requested_zoning": "CX-7-UL-CU w/ SRPOD",
+    "date_received": null,
+    "address": "727 & 729 W Morgan St",
+    "lat": 35.77965939797226,
+    "lng": -78.65193290598151,
+    "first_seen": "2026-09-04T13:00:06.530956+00:00",
+    "last_updated": "2026-09-04T13:00:06.530958+00:00"
   }
 }
