@@ -8659,16 +8659,16 @@
   },
   "Z-19-2025": {
     "case_number": "Z-19-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "RX-3 w/ TOD",
     "requested_zoning": "DX-12-CU w/ TOD",
-    "date_received": null,
+    "date_received": "2026-09-01T12:00:00+00:00",
     "address": "405, 416 Dorothea Dr",
     "lat": 35.77118344307957,
     "lng": -78.6465186653377,
     "first_seen": "2026-06-30T18:58:56.329448+00:00",
-    "last_updated": "2026-06-30T18:58:56.329449+00:00"
+    "last_updated": "2026-09-07T02:30:19.847247+00:00"
   },
   "Z-21-2025": {
     "case_number": "Z-21-2025",
@@ -9075,16 +9075,16 @@
   },
   "Z-51-2025": {
     "case_number": "Z-51-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-1",
     "requested_zoning": "CX-3-CU",
-    "date_received": null,
+    "date_received": "2026-09-01T12:00:00+00:00",
     "address": "4804 & 4808 Spring Forest Rd",
     "lat": 35.85532124931046,
     "lng": -78.55984499177104,
     "first_seen": "2026-06-30T18:58:56.329529+00:00",
-    "last_updated": "2026-06-30T18:58:56.329530+00:00"
+    "last_updated": "2026-09-07T02:30:19.847257+00:00"
   },
   "Z-52-2025": {
     "case_number": "Z-52-2025",
@@ -9231,29 +9231,29 @@
   },
   "Z-8-2026": {
     "case_number": "Z-8-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-4",
     "requested_zoning": "NX-3-PL",
-    "date_received": null,
+    "date_received": "2026-09-01T12:00:00+00:00",
     "address": "5525 & 5605 Rock Quarry Rd",
     "lat": 35.731118096671324,
     "lng": -78.55698837115874,
     "first_seen": "2026-06-30T18:58:56.329553+00:00",
-    "last_updated": "2026-06-30T18:58:56.329554+00:00"
+    "last_updated": "2026-09-07T02:30:19.847264+00:00"
   },
   "Z-9-2026": {
     "case_number": "Z-9-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "CX-3-PL & R-4",
     "requested_zoning": "CX-3-PL",
-    "date_received": null,
+    "date_received": "2026-09-01T12:00:00+00:00",
     "address": "5925 Glenwood Ave",
     "lat": 35.85306977992658,
     "lng": -78.69953316677694,
     "first_seen": "2026-06-30T18:58:56.329555+00:00",
-    "last_updated": "2026-06-30T18:58:56.329556+00:00"
+    "last_updated": "2026-09-07T02:30:19.847265+00:00"
   },
   "Z-11-2026": {
     "case_number": "Z-11-2026",
@@ -9296,16 +9296,16 @@
   },
   "Z-14-2026": {
     "case_number": "Z-14-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "RX-3",
     "requested_zoning": "RX-7-CU",
-    "date_received": null,
+    "date_received": "2026-09-01T12:00:00+00:00",
     "address": "Gorman St Assemblage",
     "lat": 35.78265340398624,
     "lng": -78.68779253391313,
     "first_seen": "2026-06-30T18:58:56.329563+00:00",
-    "last_updated": "2026-06-30T18:58:56.329563+00:00"
+    "last_updated": "2026-09-07T02:30:19.847267+00:00"
   },
   "Z-15-2026": {
     "case_number": "Z-15-2026",
