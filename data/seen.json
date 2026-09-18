@@ -9270,16 +9270,16 @@
   },
   "Z-12-2026": {
     "case_number": "Z-12-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "CX-3-CU",
     "requested_zoning": "CX-4-CU",
-    "date_received": null,
+    "date_received": "2026-09-15T12:00:00+00:00",
     "address": "6518, 6702, 6710 Rock Quarry Rd (Portion Of Each)",
     "lat": 35.71009966542851,
     "lng": -78.5418729023823,
     "first_seen": "2026-06-30T18:58:56.329559+00:00",
-    "last_updated": "2026-06-30T18:58:56.329560+00:00"
+    "last_updated": "2026-09-18T13:00:05.080754+00:00"
   },
   "Z-13-2026": {
     "case_number": "Z-13-2026",
@@ -9335,16 +9335,16 @@
   },
   "Z-17-2026": {
     "case_number": "Z-17-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "IX-3-PL & R-10 w/ SRPOD & TOD",
     "requested_zoning": "RX-3 w/ TOD & SRPOD",
-    "date_received": null,
+    "date_received": "2026-09-15T12:00:00+00:00",
     "address": "5511 & 5507 Hillsborough St; 5508 & 0 (PIN: 0784317428) Western Blvd",
     "lat": 35.78740460904284,
     "lng": -78.7171364948404,
     "first_seen": "2026-06-30T18:58:56.329568+00:00",
-    "last_updated": "2026-06-30T18:58:56.329569+00:00"
+    "last_updated": "2026-09-18T13:00:05.080757+00:00"
   },
   "Z-5-2026": {
     "case_number": "Z-5-2026",
@@ -9361,16 +9361,16 @@
   },
   "Z-18-2026": {
     "case_number": "Z-18-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-30 (Wake Co)",
     "requested_zoning": "R-10",
-    "date_received": null,
+    "date_received": "2026-09-15T12:00:00+00:00",
     "address": "6904 & 0 (PIN: 1742096775) Poole Rd",
-    "lat": 35.75376593357352,
-    "lng": -78.52598498614589,
+    "lat": 35.753855694577894,
+    "lng": -78.52598275500361,
     "first_seen": "2026-06-30T18:58:56.329572+00:00",
-    "last_updated": "2026-06-30T18:58:56.329573+00:00"
+    "last_updated": "2026-09-18T13:00:05.080759+00:00"
   },
   "Z-20-2026": {
     "case_number": "Z-20-2026",
