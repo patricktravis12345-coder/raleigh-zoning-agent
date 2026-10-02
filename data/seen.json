@@ -9579,5 +9579,18 @@
     "lng": -78.65193290598151,
     "first_seen": "2026-09-04T13:00:06.530956+00:00",
     "last_updated": "2026-09-04T13:00:06.530958+00:00"
+  },
+  "Z-37-2026": {
+    "case_number": "Z-37-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-10 w/ SRPOD & TOD",
+    "requested_zoning": "R-10-CU w/ SRPOD (Remove TOD)",
+    "date_received": null,
+    "address": "3839 Jackson St & 0 Whitmore Dr",
+    "lat": 35.786677413281325,
+    "lng": -78.6896513539085,
+    "first_seen": "2026-10-02T13:00:05.660667+00:00",
+    "last_updated": "2026-10-02T13:00:05.660669+00:00"
   }
 }
