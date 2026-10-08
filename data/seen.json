@@ -8958,16 +8958,16 @@
   },
   "Z-43-2025": {
     "case_number": "Z-43-2025",
-    "status": "In Process",
+    "status": "Denied",
     "case_type": "Z",
     "existing_zoning": "R-4",
     "requested_zoning": "R-6-CU",
-    "date_received": null,
+    "date_received": "2026-10-06T12:00:00+00:00",
     "address": "6309 Litchford Rd",
     "lat": 35.8661667337539,
     "lng": -78.59911728459521,
     "first_seen": "2026-06-30T18:58:56.329511+00:00",
-    "last_updated": "2026-06-30T18:58:56.329512+00:00"
+    "last_updated": "2026-10-08T13:00:04.822671+00:00"
   },
   "Z-44-2025": {
     "case_number": "Z-44-2025",
@@ -9062,16 +9062,16 @@
   },
   "Z-50-2025": {
     "case_number": "Z-50-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "IX-3-PL",
     "requested_zoning": "CX-20-CU",
-    "date_received": null,
+    "date_received": "2026-10-06T12:00:00+00:00",
     "address": "2233 & 2321 Capital Blvd",
     "lat": 35.809523741751576,
     "lng": -78.61547181063122,
     "first_seen": "2026-06-30T18:58:56.329527+00:00",
-    "last_updated": "2026-06-30T18:58:56.329528+00:00"
+    "last_updated": "2026-10-08T13:00:04.822675+00:00"
   },
   "Z-51-2025": {
     "case_number": "Z-51-2025",
@@ -9218,16 +9218,16 @@
   },
   "Z-7-2026": {
     "case_number": "Z-7-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "NX-3 w/ TOD & SRPOD",
     "requested_zoning": "NX-7-CU w/ TOD & SRPOD",
-    "date_received": null,
+    "date_received": "2026-10-06T12:00:00+00:00",
     "address": "3911 Western Blvd",
     "lat": 35.78416740080017,
     "lng": -78.690338188245,
     "first_seen": "2026-06-30T18:58:56.329551+00:00",
-    "last_updated": "2026-06-30T18:58:56.329552+00:00"
+    "last_updated": "2026-10-08T13:00:04.822679+00:00"
   },
   "Z-8-2026": {
     "case_number": "Z-8-2026",
