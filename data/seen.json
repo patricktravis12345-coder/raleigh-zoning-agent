@@ -9592,5 +9592,18 @@
     "lng": -78.6896513539085,
     "first_seen": "2026-10-02T13:00:05.660667+00:00",
     "last_updated": "2026-10-02T13:00:05.660669+00:00"
+  },
+  "Z-34-2026": {
+    "case_number": "Z-34-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-4",
+    "requested_zoning": "R-10-CU",
+    "date_received": null,
+    "address": "4017 Watkins Rd",
+    "lat": 35.87701162468473,
+    "lng": -78.501298894271,
+    "first_seen": "2026-10-09T13:00:04.880723+00:00",
+    "last_updated": "2026-10-09T13:00:04.880724+00:00"
   }
 }
