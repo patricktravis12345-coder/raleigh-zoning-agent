@@ -9605,5 +9605,18 @@
     "lng": -78.501298894271,
     "first_seen": "2026-10-09T13:00:04.880723+00:00",
     "last_updated": "2026-10-09T13:00:04.880724+00:00"
+  },
+  "TCZ-38-2026": {
+    "case_number": "TCZ-38-2026",
+    "status": "In Process",
+    "case_type": "TCZ",
+    "existing_zoning": "R-6-CU w/ SRPOD",
+    "requested_zoning": "R-6-CU w/ SRPOD (Amend Zoning Conditions)",
+    "date_received": null,
+    "address": "1000 & 1100 Trailwood Dr",
+    "lat": 35.76681289550204,
+    "lng": -78.69121077958908,
+    "first_seen": "2026-10-21T13:00:08.411357+00:00",
+    "last_updated": "2026-10-21T13:00:08.411359+00:00"
   }
 }
