@@ -9127,16 +9127,16 @@
   },
   "Z-56-2025": {
     "case_number": "Z-56-2025",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "OX-3 w/ SHOD-1",
     "requested_zoning": "IX-3-CU w/ SHOD-1",
-    "date_received": null,
+    "date_received": "2026-10-20T12:00:00+00:00",
     "address": "4020 Carya Dr",
     "lat": 35.77113226750936,
     "lng": -78.57044955271603,
     "first_seen": "2026-06-30T18:58:56.329537+00:00",
-    "last_updated": "2026-06-30T18:58:56.329538+00:00"
+    "last_updated": "2026-10-27T13:00:06.413826+00:00"
   },
   "Z-57-2025": {
     "case_number": "Z-57-2025",
@@ -9309,16 +9309,16 @@
   },
   "Z-15-2026": {
     "case_number": "Z-15-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-4",
     "requested_zoning": "OX-3-PL-CU",
-    "date_received": null,
+    "date_received": "2026-10-20T12:00:00+00:00",
     "address": "7600 Falls of Neuse Rd",
     "lat": 35.887517848109496,
     "lng": -78.62594002094089,
     "first_seen": "2026-06-30T18:58:56.329564+00:00",
-    "last_updated": "2026-06-30T18:58:56.329565+00:00"
+    "last_updated": "2026-10-27T13:00:06.413830+00:00"
   },
   "Z-16-2026": {
     "case_number": "Z-16-2026",
@@ -9387,16 +9387,16 @@
   },
   "TCZ-19-2026": {
     "case_number": "TCZ-19-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "TCZ",
     "existing_zoning": "R-6-CU",
     "requested_zoning": "R-6-CU (Amend Zoning Conditions)",
-    "date_received": null,
+    "date_received": "2026-10-20T12:00:00+00:00",
     "address": "3717 Edwards Mill Rd",
     "lat": 35.8306645235828,
     "lng": -78.70144398091769,
     "first_seen": "2026-06-30T18:58:56.329576+00:00",
-    "last_updated": "2026-06-30T18:58:56.329577+00:00"
+    "last_updated": "2026-10-27T13:00:06.413833+00:00"
   },
   "Z-21-2026": {
     "case_number": "Z-21-2026",
@@ -9618,5 +9618,18 @@
     "lng": -78.69121077958908,
     "first_seen": "2026-10-21T13:00:08.411357+00:00",
     "last_updated": "2026-10-21T13:00:08.411359+00:00"
+  },
+  "Z-39-2026": {
+    "case_number": "Z-39-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "R-1 w/ FWPOD",
+    "requested_zoning": "R-6-CU w/ FWPOD",
+    "date_received": null,
+    "address": "8401 Honeycutt Rd",
+    "lat": 35.89507371990477,
+    "lng": -78.62313778935713,
+    "first_seen": "2026-10-27T13:00:06.413837+00:00",
+    "last_updated": "2026-10-27T13:00:06.413839+00:00"
   }
 }
