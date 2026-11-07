@@ -9400,29 +9400,29 @@
   },
   "Z-21-2026": {
     "case_number": "Z-21-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-30 (Wake Co.)",
     "requested_zoning": "R-10",
-    "date_received": null,
+    "date_received": "2026-11-04T12:00:00+00:00",
     "address": "2905 Hodge Rd",
     "lat": 35.74609256563191,
     "lng": -78.51522220810696,
     "first_seen": "2026-06-30T18:58:56.329578+00:00",
-    "last_updated": "2026-06-30T18:58:56.329579+00:00"
+    "last_updated": "2026-11-07T14:00:06.064969+00:00"
   },
   "Z-22-2026": {
     "case_number": "Z-22-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "R-10 w/ NCOD",
     "requested_zoning": "R-10-CU (Remove NCOD)",
-    "date_received": null,
+    "date_received": "2026-11-04T12:00:00+00:00",
     "address": "Bragg St & S East St Assemblage",
     "lat": 35.766251155942754,
     "lng": -78.63328533738832,
     "first_seen": "2026-06-30T18:58:56.329580+00:00",
-    "last_updated": "2026-06-30T18:58:56.329581+00:00"
+    "last_updated": "2026-11-07T14:00:06.064971+00:00"
   },
   "Z-23-2026": {
     "case_number": "Z-23-2026",
@@ -9491,16 +9491,16 @@
   },
   "Z-30-2026": {
     "case_number": "Z-30-2026",
-    "status": "In Process",
+    "status": "Withdrawn",
     "case_type": "Z",
     "existing_zoning": "RX-3 w/ NCOD & SRPOD",
-    "requested_zoning": "RX-3-CU (Remove NCOD & SRPOD)",
-    "date_received": null,
-    "address": "2408 Clark Ave",
-    "lat": 35.78972760264605,
-    "lng": -78.66613822537377,
+    "requested_zoning": "RX-3-CU w/ SRPOD (Remove NCOD)",
+    "date_received": "2026-11-04T12:00:00+00:00",
+    "address": "2408, 2404, 2402 Clark Ave; 300 Horne St",
+    "lat": 35.78981704659681,
+    "lng": -78.6662492632351,
     "first_seen": "2026-08-03T13:00:04.632042+00:00",
-    "last_updated": "2026-08-03T13:00:04.632043+00:00"
+    "last_updated": "2026-11-07T14:00:06.064973+00:00"
   },
   "Z-28-2026": {
     "case_number": "Z-28-2026",
