@@ -9192,16 +9192,16 @@
   },
   "Z-4-2026": {
     "case_number": "Z-4-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "RX-3-CU & NX-3-PK",
     "requested_zoning": "CX-3-PK-CU",
-    "date_received": null,
+    "date_received": "2026-11-17T12:00:00+00:00",
     "address": "5750 Louisburg Rd (Portion Of)",
     "lat": 35.85624184821685,
     "lng": -78.5536188860216,
     "first_seen": "2026-06-30T18:58:56.329547+00:00",
-    "last_updated": "2026-06-30T18:58:56.329548+00:00"
+    "last_updated": "2026-11-20T14:00:04.850807+00:00"
   },
   "Z-6-2026": {
     "case_number": "Z-6-2026",
@@ -9283,16 +9283,16 @@
   },
   "Z-13-2026": {
     "case_number": "Z-13-2026",
-    "status": "In Process",
+    "status": "Approved",
     "case_type": "Z",
     "existing_zoning": "NX-3-UL w/ TOD & R-10",
     "requested_zoning": "RX-4-UL-CU w/ TOD",
-    "date_received": null,
-    "address": "767 S Saunders St",
+    "date_received": "2026-11-17T12:00:00+00:00",
+    "address": "606 Dorothea Drive (FKA 767 South Saunders Street)",
     "lat": 35.77136734456752,
     "lng": -78.64851255455004,
     "first_seen": "2026-06-30T18:58:56.329561+00:00",
-    "last_updated": "2026-06-30T18:58:56.329562+00:00"
+    "last_updated": "2026-11-20T14:00:04.850811+00:00"
   },
   "Z-14-2026": {
     "case_number": "Z-14-2026",
