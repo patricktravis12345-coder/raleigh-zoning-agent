@@ -9631,5 +9631,18 @@
     "lng": -78.62313778935713,
     "first_seen": "2026-10-27T13:00:06.413837+00:00",
     "last_updated": "2026-10-27T13:00:06.413839+00:00"
+  },
+  "Z-41-2026": {
+    "case_number": "Z-41-2026",
+    "status": "In Process",
+    "case_type": "Z",
+    "existing_zoning": "CX-20-CU",
+    "requested_zoning": "CX-30-CU",
+    "date_received": null,
+    "address": "1010 & 1020 St. Albans Dr",
+    "lat": 35.83145744972871,
+    "lng": -78.62220487637212,
+    "first_seen": "2026-11-24T14:00:04.092763+00:00",
+    "last_updated": "2026-11-24T14:00:04.092765+00:00"
   }
 }
